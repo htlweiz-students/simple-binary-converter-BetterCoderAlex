@@ -67,5 +67,16 @@
             }
             System.Console.WriteLine();
         }
+        public void Bubble_sort(int[] array){
+            for (int count = 0; count < array.Length; count++){
+                for (int count2 = 0; count2 < array.Length - count-1; count2++){
+                    if (array[count2] > array[count2+1]){
+                        int temp = array[count2];
+                        array[count2] = array[count2+1];
+                        array[count2+1] = temp;
+                    }
+                }
+            }
+        }
     }
 }
